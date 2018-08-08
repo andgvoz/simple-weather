@@ -30,6 +30,7 @@ server.root*
 .metadata
 target
 *.iml
+*.java
 .idea
 .classpath
 .settings
