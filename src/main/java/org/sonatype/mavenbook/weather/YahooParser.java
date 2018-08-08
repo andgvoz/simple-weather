@@ -22,20 +22,20 @@ public class YahooParser {
         Document doc = xmlReader.read(inputStream);
 
         log.info("Parsing XML Response");
-        weather.setCity("");
-        weather.setRegion("");
-        weather.setCountry("");
-        weather.setCondition("");
-        weather.setTemp("");
-        weather.setChill("");
-        weather.setHumidity("");
+        weather.setCity(doc.valueOf("//yweather:location/@city"));
+        weather.setRegion(doc.valueOf("//yweather:location/@region"));
+        weather.setCountry(doc.valueOf("//yweather:location/@country"));
+        weather.setCondition(doc.valueOf("//yweather:condition/@text"));
+        weather.setTemp(doc.valueOf("//yweather:condition/@temp"));
+        weather.setChill(doc.valueOf("//yweather:wind/@chill"));
+        weather.setHumidity(doc.valueOf("//yweather:atmosphere/@humidity"));
 
         return weather;
     }
 
     private SAXReader createXmlReader() {
         Map<String, String> uris = new HashMap<String, String>();
-        uris.put("y", "http://xml.weather.yahoo.com/ns/rss/1.0");
+        uris.put("yweather", "http://xml.weather.yahoo.com/ns/rss/1.0");
 
         DocumentFactory factory = new DocumentFactory();
         factory.setXPathNamespaceURIs(uris);
