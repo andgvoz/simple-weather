@@ -23,7 +23,7 @@ public class YahooParser {
 
         log.info("Parsing XML Response");
         weather.setCity(doc.valueOf("//yweather:location/@city"));
-        weather.setRegion(doc.valueOf("//yweather:location/@region"));
+        weather.setRegion(doc.valueOf("normalize-space(//yweather:location/@region)"));
         weather.setCountry(doc.valueOf("//yweather:location/@country"));
         weather.setCondition(doc.valueOf("//yweather:condition/@text"));
         weather.setTemp(doc.valueOf("//yweather:condition/@temp"));
