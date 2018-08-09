@@ -36,4 +36,5 @@ target
 .settings
 .project
 *~
+*.1
 
