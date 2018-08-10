@@ -13,8 +13,8 @@
     <bytecodeTargetLevel>
       <module name="parent" target="1.5" />
       <module name="simple-parent" target="1.5" />
-      <module name="simple-weather" target="1.5" />
-      <module name="simple-webapp" target="1.5" />
+      <module name="simple-weather" target="1.8" />
+      <module name="simple-webapp" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
