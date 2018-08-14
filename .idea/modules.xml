@@ -3,7 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/parent.iml" filepath="$PROJECT_DIR$/parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/simple-parent/simple-command/simple-command.iml" filepath="$PROJECT_DIR$/simple-parent/simple-command/simple-command.iml" />
+      <module fileurl="file://$PROJECT_DIR$/simple-parent/simple-model/simple-model.iml" filepath="$PROJECT_DIR$/simple-parent/simple-model/simple-model.iml" />
       <module fileurl="file://$PROJECT_DIR$/simple-parent/simple-parent.iml" filepath="$PROJECT_DIR$/simple-parent/simple-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/simple-parent/simple-persist/simple-persist.iml" filepath="$PROJECT_DIR$/simple-parent/simple-persist/simple-persist.iml" />
       <module fileurl="file://$PROJECT_DIR$/simple-parent/simple-weather/simple-weather.iml" filepath="$PROJECT_DIR$/simple-parent/simple-weather/simple-weather.iml" />
       <module fileurl="file://$PROJECT_DIR$/simple-parent/simple-webapp/simple-webapp.iml" filepath="$PROJECT_DIR$/simple-parent/simple-webapp/simple-webapp.iml" />
     </modules>

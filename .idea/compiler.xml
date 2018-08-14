@@ -6,15 +6,21 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="simple-command" />
+        <module name="simple-model" />
+        <module name="simple-persist" />
         <module name="simple-weather" />
         <module name="simple-webapp" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="parent" target="1.5" />
+      <module name="simple-command" target="1.5" />
+      <module name="simple-model" target="1.5" />
       <module name="simple-parent" target="1.5" />
-      <module name="simple-weather" target="1.8" />
-      <module name="simple-webapp" target="1.8" />
+      <module name="simple-persist" target="1.5" />
+      <module name="simple-weather" target="1.5" />
+      <module name="simple-webapp" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

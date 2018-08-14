@@ -5,16 +5,19 @@
                              http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-  	<groupId>org.sonatype.mavenbook.multi</groupId>
+  	<groupId>org.sonatype.mavenbook.multispring</groupId>
   	<artifactId>parent</artifactId>
-  	<version>1.0</version>
+  	<version>0.8-SNAPSHOT</version>
   </parent>
   <artifactId>simple-parent</artifactId>
   <packaging>pom</packaging>
-  <name>Multi Chapter Simple Parent Project</name>
+  <name>Multi-Spring Chapter Simple Parent Project</name>
  
   <modules>
+    <module>simple-command</module>
+    <module>simple-model</module>
     <module>simple-weather</module>
+    <module>simple-persist</module>
     <module>simple-webapp</module>
   </modules>
 
@@ -25,8 +28,8 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
-          <source>1.8</source>
-          <target>1.8</target>
+          <source>1.5</source>
+          <target>1.5</target>
         </configuration>
       </plugin>
     </plugins>
